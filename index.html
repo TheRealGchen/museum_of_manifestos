@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museum of Manifestos</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+  <div class="container mx-auto p-6 max-w-3xl">
+    <h1 class="text-3xl font-bold mb-6">Museum of Manifestos</h1>
+
+    <p class="mb-4">
+      Welcome to the Museum of Manifestos — a collection of historical and cultural texts.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-2">Explore the Collection</h2>
+
+    <ul class="space-y-2">
+      <li>
+        <a href="manifestos/manifesto1.txt" class="text-blue-500 hover:underline">Read Text Manifesto</a>
+      </li>
+      <li>
+        <a href="manifestos/manifesto2.pdf" target="_blank" class="text-blue-500 hover:underline">Read PDF Manifesto</a>
+      </li>
+    </ul>
+
+    <!-- Dark Mode Toggle (Optional) -->
+    <button id="darkModeToggle" class="mt-6 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded">
+      Toggle Dark Mode
+    </button>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
