@@ -277,7 +277,7 @@ stream: true
 #auto-lint: true
 
 ## Specify command to run tests
-test-cmd: pytest
+# test-cmd: [pytest]
 
 ## Enable/disable automatic testing after changes (default: False)
 # auto-test: true
